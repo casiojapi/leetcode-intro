@@ -8,7 +8,10 @@ from collections import deque
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         q = deque()
-        q.append(root)
+        if root:
+            q.append(root)
+        else:
+            return 0
         level = 0
         while q:
             
@@ -21,3 +24,4 @@ class Solution:
             level += 1
         
         return level
+                
