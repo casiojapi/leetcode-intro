@@ -20,7 +20,7 @@ def mergeSort(arr):
         
         while i < len(leftArr):     # in case the are still values on the left array
             arr[k] = leftArr[i]
-            i += 1
+            i += 1 
             k += 1
         
         while j < len(rightArr):
